@@ -54,7 +54,7 @@ def GetRelevantCFilesRelativePath(everything):
             cFile = os.path.normpath(m.group(1).replace("$", ""))
             if(not os.path.isabs(cFile)):
                 #This must be a build generated file
-                cFiles.append(os.path.normpath(os.path.join(bldDir, cFile)))#This is actually a absolute path. But no harm.
+                cFiles.append(os.path.normpath(os.path.join(bldDir, cFile)))#This is actually an absolute path. But no harm.
             else:
                 cFiles.append(os.path.relpath(cFile, srcDir))# get the relative path to the srcDir
     everything["cFiles"] = list(set(cFiles))
