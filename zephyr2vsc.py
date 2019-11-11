@@ -185,7 +185,7 @@ def LoadVSCJSONTemplates(everything):
     print("VS Code configuration JSON templates loaded.\n")
     return
 
-def DeriveOtheConfigs(everything):
+def DeriveConfigs(everything):
     GetNinjaRulesFile(everything)
     GetNinjaBuildFile(everything)
     LoadVSCJSONTemplates(everything)
@@ -194,7 +194,7 @@ def DeriveOtheConfigs(everything):
 
 def DoWork(everything):
     print("Start generating VSCode workspace for:\n[%s]\n" % everything["srcDir"])
-    DeriveOtheConfigs(everything)    
+    DeriveConfigs(everything)    
     GetNinjaRules(everything)
     GetRelevantCFilesRelativePath(everything)
     GetAllCFilesRelativePath(everything)
