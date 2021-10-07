@@ -1,3 +1,4 @@
+# coding=UTF-8
 import sys
 import os.path
 import re
@@ -169,7 +170,7 @@ def GenerateVSCConfigJSONs(everything):
     return
 
 def GetNinjaRulesFile(everything):
-    everything["ninjaRulesFile"]= os.path.join(everything["bldDir"], "rules.ninja")
+    everything["ninjaRulesFile"]= os.path.join(everything["bldDir"], "CMakeFiles", "rules.ninja")
     print("Ninja rules file found:\n[%s]\n" % everything["ninjaRulesFile"])
     return
 

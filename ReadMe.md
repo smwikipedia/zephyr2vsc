@@ -2,7 +2,7 @@
 
 Visual Studio Code is a cross-platform IDE.
 
-This tool imports Zephyr (https://github.com/zephyrproject-rtos/zephyr) source code into Visual Studio Code in the context of a build.
+This tool imports Zephyr ([https://github.com/zephyrproject-rtos/zephyr](https://github.com/zephyrproject-rtos/zephyr) ) source code into Visual Studio Code in the context of a build.
 
 A build must be made before using this tool because certain dependent files are only generated after a build.
 
